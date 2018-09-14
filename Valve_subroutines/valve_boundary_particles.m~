@@ -1,0 +1,26 @@
+function [ output_args ] = valve_boundary_particles( start_x, start_y, base_width, base_height, leaflet_width, leaflet_height, angle)
+%valve_boundary_particles 
+% Finds particles on the boundary of the desired sh
+
+% Corner coordinates of desired gemoetry
+
+x0 = start_x;
+x1 = x0;
+x2 = start_x + leaflet_length * cos(pi/2 - abs(angle));
+x3 = x2 + leaflet_width * cos(abs(angle));
+x4 = start_x + base_width;
+x5 = x4;
+
+y0 = start_y;
+y1 = start_y + base_length;
+y2 = y1 + leaflet_length * sin(pi/2 - abs(angle));
+y3 = y2 - leaflet_width * sin(abs(angle));
+y4 = y1;
+y5 = y0;
+
+
+x_desired = [start_x start_x start_x + width start_x + width];
+y_desired = [start_y start_y + height start_y + height start_y];
+
+end
+

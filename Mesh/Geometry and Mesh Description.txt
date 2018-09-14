@@ -1,0 +1,11 @@
+Geometry Type:
+Beam clamped at wall
+
+Number of Particles:
+375
+Number of Bonds:
+966
+Number of Boundary Particles:
+153
+Number of Boundary Bonds:
+152
